@@ -9,13 +9,16 @@ const Task = ({ title, todo, notes }) => {
         {todo.length > 0 && (
           <ul>
             {todo.map(todo => (
-              <li>
+              <li
+                className='card bg-light'
+                style={{ fontFamily: "Roboto", fontSize: "1.1rem" }}
+              >
                 <input type='checkbox' /> {todo}
               </li>
             ))}
           </ul>
         )}
-        {notes !== "" && <h3 className='m-1'>{notes}</h3>}
+        {notes !== "" && <h3 className='my-1 m-1'>{notes}</h3>}
       </div>
     </Fragment>
   );

@@ -36,17 +36,19 @@ class App extends Component {
     return (
       <div className='App'>
         <Navbar />
-        <div className='all-center m-3'>
+        <div className='all-center'>
           <img
             src={avatar_url}
             className='round-img'
             alt=''
-            style={{ width: "70px" }}
+            style={{ width: "70px", margin: "1rem" }}
           />
           <h1 className='large'>{name}'s Tasks</h1>
         </div>
 
-        <TasksView tasks={tasks} />
+        <div className='m-2'>
+          <TasksView tasks={tasks} />
+        </div>
       </div>
     );
   }
