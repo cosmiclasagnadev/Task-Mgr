@@ -4,6 +4,7 @@ import "./App.css";
 import TasksView from "./components/tasks/TasksView";
 
 class App extends Component {
+  // State is hard-coded for now! No back-end/API yet to use
   state = {
     tasks: [
       {
@@ -30,6 +31,7 @@ class App extends Component {
 
   render() {
     const { tasks, name } = this.state;
+    // Avatar_url is hard-coded for now
     const avatar_url = "https://avatars3.githubusercontent.com/u/28593720?v=4";
     return (
       <div className='App'>

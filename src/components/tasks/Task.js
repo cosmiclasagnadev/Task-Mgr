@@ -19,6 +19,7 @@ const Task = ({ title, todo, notes }) => {
       </div>
     </Fragment>
   );
+  // Will add functionality for adding more todos and notes for a specific taskItem
 };
 
 Task.propTypes = {

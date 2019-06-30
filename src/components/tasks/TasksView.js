@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Task from "./Task";
 
 const TasksView = ({ loading, tasks }) => {
+  // Should add a functionality for adding tasks to the taskView
   if (loading) {
     return <h2 className='text-center'>Loading...</h2>;
   } else {
